@@ -95,7 +95,6 @@ class TimeSeriesPlot:
         for x in range(1, 6):
             x_value = x * interval
             x_value_str = "{:.1f}".format(x_value)  # format to one decimal place
-            self.window.plot(x_value, 0, 'black')  # Dashes
             unitLabel = Text(Point(x_value, -0.04), x_value_str, 'times new roman', 'black', 8)
             unitLabel.setStyle('italic')
             unitLabel.draw(self.window)
@@ -106,7 +105,6 @@ class TimeSeriesPlot:
         for y in range(1, 6):
             y_value = y * interval
             y_value_str = "{:.1f}".format(y_value)  # format to one decimal place
-            self.window.plot(0, y_value, 'black')  # ticks
             unitLabel = Text(Point(-0.15, y_value), y_value_str, 'times new roman', 'black', 8)
             unitLabel.setStyle('italic')
             unitLabel.draw(self.window)
