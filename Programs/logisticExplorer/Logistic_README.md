@@ -51,10 +51,10 @@ The following are the inputs to the program that can be set/changed or used to i
 **transient iterations:** affects the same plots as the item above; essentially the number of iterations that you do NOT want to be displayed; range of valid inputs is: [0, 500].
                         
 **R-value:** is derived from either the bifurcation diagram (fetch-R) or an entry box. R can be within the range of [0, 4]. You may find the following through exploration:
-	- R ∈ [0,1] is stable and attracting
-	- R ∈ [1,3] bifurcates into (r – 1) / r as stable attracting…
-	- …which bifurcates into 1+√6
-	- R ∈1+6, 4]: there exists a range where all periods (of natural numbers) exists
+-  R ∈ [0,1] is stable and attracting
+- R ∈ [1,3] bifurcates into (r – 1) / r as stable attracting…
+- …which bifurcates into 1+√6
+- R ∈ 1+√6, 4]: there exists a range where all periods (of natural numbers) exists
 
 **zooming:** can zoom in and out of the bifurcation diagram
                         
