@@ -1,5 +1,5 @@
-Radha Munver
-October 27, 2023
+Radha Munver  |  
+October 27, 2023  |  
 Nonlinear Dynamics
 
 # Logistic Map Explorer
