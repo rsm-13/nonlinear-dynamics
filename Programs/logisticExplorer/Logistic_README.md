@@ -9,8 +9,9 @@ Nonlinear Dynamics
 
 *About the Logistic Map Equation:*
     
-X0 ∈ [0, 1] and R ∈ [0, 4]
-Xn + 1 = f_R (Xn) = R • Xn • (1 − Xn)
+X0 ∈ [0, 1] and R ∈ [0, 4] 
+
+Xn + 1 = f_R (Xn) = R • Xn • (1 − Xn) 
 
 
 *Purpose of Explorer:*
