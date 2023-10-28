@@ -18,7 +18,7 @@ Xn + 1 = f_R (Xn) = R • Xn • (1 − Xn)
 Create an interactive interface for which the user can explore the dynamics of the logistic map with ease and make potential discoveries.
 
 
-*Instructions:*   Jump directly to the manual and tips at the bottom.
+*Instructions:*  Click [here]([url](https://github.com/rsm-13/nonlinear-dynamics/blob/main/Programs/logisticExplorer/Logistic_README.md#instructions--tips)) to jump directly to the manual and tips.
 
 ---
 
