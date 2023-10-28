@@ -19,6 +19,7 @@ Create an interactive interface for which the user can explore the dynamics of t
 
 
 *Instructions:*  Click [here]([url](https://github.com/rsm-13/nonlinear-dynamics/blob/main/Programs/logisticExplorer/Logistic_README.md#instructions--tips)) to jump directly to the manual and tips.
+(https://github.com/rsm-13/nonlinear-dynamics/blob/main/Programs/logisticExplorer/Logistic_README.md#instructions--tips)
 
 ---
 
