@@ -1,5 +1,5 @@
-Radha Munver
-October 27, 2023
+Radha Munver  |  
+October 27, 2023  |  
 Nonlinear Dynamics
 
 # Logistic Map Explorer
@@ -9,8 +9,8 @@ Nonlinear Dynamics
 
 *About the Logistic Map Equation:*
     
-X0 ∈ [0, 1] and R ∈ [0, 4]
-Xn + 1 = f_R (Xn) = R • Xn • (1 − Xn)
+- X0 ∈ [0, 1] and R ∈ [0, 4] 
+- Xn + 1 = f_R (Xn) = R • Xn • (1 − Xn) 
 
 
 *Purpose of Explorer:*
@@ -18,7 +18,8 @@ Xn + 1 = f_R (Xn) = R • Xn • (1 − Xn)
 Create an interactive interface for which the user can explore the dynamics of the logistic map with ease and make potential discoveries.
 
 
-*Instructions:*   Jump directly to the manual and tips at the bottom.
+*Instructions:*  Click [here]([url](https://github.com/rsm-13/nonlinear-dynamics/blob/main/Programs/logisticExplorer/Logistic_README.md#instructions--tips)) to jump directly to the manual and tips.
+(https://github.com/rsm-13/nonlinear-dynamics/blob/main/Programs/logisticExplorer/Logistic_README.md#instructions--tips)
 
 ---
 
@@ -50,10 +51,10 @@ The following are the inputs to the program that can be set/changed or used to i
 **transient iterations:** affects the same plots as the item above; essentially the number of iterations that you do NOT want to be displayed; range of valid inputs is: [0, 500].
                         
 **R-value:** is derived from either the bifurcation diagram (fetch-R) or an entry box. R can be within the range of [0, 4]. You may find the following through exploration:
-	- R ∈ [0,1] is stable and attracting
-	- R ∈ [1,3] bifurcates into (r – 1) / r as stable attracting…
-	- …which bifurcates into 1+√6
-	- R ∈1+6, 4]: there exists a range where all periods (of natural numbers) exists
+-  R ∈ [0,1] is stable and attracting
+- R ∈ [1,3] bifurcates into (r – 1) / r as stable attracting…
+- …which bifurcates into 1+√6
+- R ∈ 1+√6, 4]: there exists a range where all periods (of natural numbers) exists
 
 **zooming:** can zoom in and out of the bifurcation diagram
                         
