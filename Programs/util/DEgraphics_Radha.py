@@ -489,6 +489,8 @@ class DEGraphWin(tk.Canvas):
                     #       + "," + '{:03.4f}'.format(self.currentCoords[3]) + "]")
                 else:
                     self.zoomBox.undraw()
+                
+                return abs((y2-y1)/(x2-x1))
             else: # we will maintain the original aspect ratio
                 # will use the zoom width only, and set height accordingly
                 pt1 = self.getMouse()
@@ -538,6 +540,8 @@ class DEGraphWin(tk.Canvas):
                     #       + "," + '{:03.4f}'.format(self.currentCoords[3]) + "]")
                 else:
                     self.zoomBox.undraw()
+                return ratio
+        
         elif whichWay == ZOOM_OUT:
             # zooms back to defaultCoords
             # print("Zooming OUT to [" + '{:03.4f}'.format(self.defaultCoords[0])
