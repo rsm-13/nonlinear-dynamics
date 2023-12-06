@@ -1,5 +1,5 @@
-Radha Munver
-December 6, 2023
+Radha Munver |
+December 6, 2023 |
 Nonlinear Dynamics
 
 # Newton’s Method Fractal Explorer
