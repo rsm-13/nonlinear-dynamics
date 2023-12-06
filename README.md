@@ -1,5 +1,4 @@
 # nonlinear-dynamics
-
 Exploring Chaos Theory and Nonlinear Equations via Graphical Interfaces
 
 ## Logistic Map Explorer
