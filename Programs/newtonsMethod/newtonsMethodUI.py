@@ -310,7 +310,7 @@ def main(x,y):
     abt = "\n\
     While you wait for the default fractal, (z^3) – 1,\n \
     to generate, scan the QR code to learn about  \n \
-        Newton's Method and how to use the exporer.\
+        Newton's Method and how to use the explorer.\
     "
     txtAbout = Text(Point(2.75,-1.5), abt, 'avenir', 'white', 14)
     txtAbout.draw(winQR)
