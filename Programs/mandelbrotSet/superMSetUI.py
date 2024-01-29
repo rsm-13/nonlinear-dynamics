@@ -239,7 +239,7 @@ def main(x,y):
     to generate, (z^2) + c, where c = 0.365 - 0.37j, scan the QR code to  \n \
         the left to learn about the Mandelbrot Set and how to use the explorer.\
     "
-    txtAbout = Text(Point(2.5,-1), abt, 'avenir', 'white', 14)
+    txtAbout = Text(Point(2.5,0), abt, 'avenir', 'white', 14)
     txtAbout.draw(winQR)
 
 
