@@ -1449,11 +1449,11 @@ class SimpleButton(Button):
 #### other TK WIDGET classes ####
 
 class DropDown(GraphicsObject):
-    def __init__(self, topLeft,choices=[],font=('courier',18),bg='black'):
+    def __init__(self, topLeft, default='Select', choices=[],font=('courier',18),bg='black'):
         GraphicsObject.__init__(self, [])
         self.anchor = topLeft.clone()
         self.text = tk.StringVar(_root)
-        self.text.set("")
+        self.text.set(default)
         self.fill = "gray"
         self.color = "black"
         self.bgColor=bg
@@ -1471,7 +1471,7 @@ class DropDown(GraphicsObject):
 
         # force the OptionMenu to have a width
         # commensurate with its longest element
-        self.width = max([len(choice) for choice in self.choices])
+        self.width = max([len(choice) for choice in self.choices])-1
         self.menu.config(width=self.width)
 
         p = self.anchor
@@ -1498,6 +1498,10 @@ class DropDown(GraphicsObject):
         self.color=color
         if self.menu:
             self.menu.config(fg=color)
+        
+    def setBGColor(self,color):
+        self.bgColor=color
+        self.menu.config(bg=color)
 
     def getChoice(self):
         return self.text.get()
