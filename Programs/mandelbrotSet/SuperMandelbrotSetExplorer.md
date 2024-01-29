@@ -13,8 +13,8 @@ This folder contains the code for a Super Mandelbrot Set Explorer, a graphical u
 To run the application, you will need to have Python 3 installed on your computer. You can download Python from the official Python website. Once you have installed Python, you can clone this repository and run the `superMSetUI.py` file.
 
 ```
-git clone https://github.com/radhamunver/nonlinear-dynamics.git
-cd mandelbrotSet
+git clone https://github.com/rsm-13/nonlinear-dynamics.git
+cd Programs/mandelbrotSet/
 python3 superMSetUI.py
 ```
 
@@ -32,33 +32,33 @@ The GUI consists of several windows:
 
 To use the application, simply click on the buttons in the control panel window to control the application. The following is a description of each button / operation:
 
-* Click the **“☰”** symbol in the side-panel to open up the menu.
+* Click the **`☰`** symbol in the side-panel to open up the menu.
     * Clicking the symbol once again will collapse the menu.
-* **“About”** will bring you to this page for documentation. (as will the QR code)
-* Users can choose to toggle the brightness of the interface using light mode (dark mode is default) using the **“Dark / Light Mode”** button.
-* Use <code>“M: Zoom-In”</code> to zoom into the Mandelbrot set and <code>“J: Zoom-In”</code> for the Julia set;
-    * After clicking **“Zoom-In,”** click two points on the respective window to draw the rectangular region for which the window will zoom; the two points symbolize the two corners of the rectangle.
+* **`About`** will bring you to this page for documentation. (as will the QR code)
+* Users can choose to toggle the brightness of the interface using light mode (dark mode is default) using the **`Dark / Light Mode`** button.
+* Use **`M: Zoom-In`** to zoom into the Mandelbrot set and **`J: Zoom-In`** for the Julia set;
+    * After clicking **`Zoom-In,`** click two points on the respective window to draw the rectangular region for which the window will zoom; the two points symbolize the two corners of the rectangle.
     * Once a black rectangle appears in the window, press the “Zoom-In” button once again in the control-panel.
-* **“Zoom-Out”** will reset the zoom to the default zoom of the respective windows.
-* Under **“Palette Selection,”** the user has the option of changing the color schemes on the Mandelbrot set. 
-    * By clicking the **“Dual Tone”** button, a color chooser window will pop up, and the user has the option to select two colors to generate a two-tone Mandelbrot set. 
+* **`Zoom-Out`** will reset the zoom to the default zoom of the respective windows.
+* Under **`Palette Selection`,** the user has the option of changing the color schemes on the Mandelbrot set. 
+    * By clicking the **`Dual Tone`** button, a color chooser window will pop up, and the user has the option to select two colors to generate a two-tone Mandelbrot set. 
     * To its right is a drop-down menu to generate a single-tone gradient for the Mandelbrot set. The options are **Red, Green, and Blue.** 
-    * When using a two-tone, it is a good measure to keep the drop-down set to **‘1T:None’** to avoid any issues when zooming.
+    * When using a two-tone, it is a good measure to keep the drop-down set to **`‘1T:None’`** to avoid any issues when zooming.
 * The user can change the algorithm for the Julia Set as well as some of the parameters.
-    * Under **“Select Algorithm”** are two options: **“Escape”** and **“Inverse.”** This applies only to the Julia set.
-    * Below that is a string entry field labeled **“C-Value”** for which the user can enter a given constant to alter the Julia Set. The format is (<code>real</code>, <code>imag</code>). Please include the parenthesis, comma, and space.
-    * The int entry field below allows the user to change the maximum number of iterations for the Mandelbrot and Julia sets. The span for this field is <code>[0, 1000].</code>
-    * Once you are done choosing values, click **“Apply Changes”** at the bottom of the control panel, and the updated windows should be displayed using your selected entries. Note that the single-tone Mandelbrot set will only appear after clicking “Apply Changes” while the dual-tone will appear immediately.
+    * Under **`Select Algorithm`** are two options: **`Escape`** and **`Inverse`**. This applies only to the Julia set.
+    * Below that is a string entry field labeled **`C-Value`** for which the user can enter a given constant to alter the Julia Set. The format is (<code>real</code>, <code>imag</code>). Please include the parenthesis, comma, and space.
+    * The int entry field below allows the user to change the maximum number of iterations for the Mandelbrot and Julia sets. The span for this field is <code>[0, 1000]</code>.
+    * Once you are done choosing values, click **`Apply Changes`** at the bottom of the control panel, and the updated windows should be displayed using your selected entries. Note that the single-tone Mandelbrot set will only appear after clicking “Apply Changes” while the dual-tone will appear immediately.
     * *(See tips for more details or if difficulty arises.)*
-* To clear the Mandelbrot Set diagram or Julia Set diagram, press the respective “Clear” buttons.
-* **“Quit Program”** will close the application and explorer.
+* To clear the Mandelbrot Set diagram or Julia Set diagram, press the respective **`Clear`** buttons.
+* **`Quit Program`** will close the application and explorer.
 * For further questions not answered in this instructions or in the tips below, please email <a>rmunver25@d-e.org</a>. 
 
 ---
 
 ## About the Julia Set
 
-This code explores the Julia set, a beautiful and complex fractal that is generated by iteratively applying a simple mathematical formula to a complex number. The Julia set is named after the French mathematician Gaston Julia, who first studied it in the early 20th century.
+The Julia set is a beautiful and complex fractal that is generated by iteratively applying a simple mathematical formula to a complex number. The Julia set is named after the French mathematician Gaston Julia, who first studied it in the early 20th century.
 
 
 ### Exploring the Julia Set
@@ -90,22 +90,22 @@ The Julia Set Explorer allows you to specify the value of `c`. You can do this b
 
 Each time you change the value of `c`, the Julia set will be re-plotted, granted 'Apply Changes' is clicked.
 
-#### Escape Algorithm
+### Escape Algorithm
 
 The escape algorithm is the most common way to plot the Julia set. It works by iterating through a grid of complex numbers and checking whether each number escapes to infinity or remains bounded. If a number escapes to infinity, it is colored black; otherwise, it is colored according to the number of iterations it took for it to escape.
 
-### Inverse Algorithm for Julia Set
+### Inverse Algorithm
 
-The inverse plotting algorithm starts with a random complex number `z` and iteratively applies the function `g(z) = i * (z - c) ** 0.5`, where `i` is either 1 or -1 (chosen randomly) and `c` is a constant complex number. The algorithm plots the points `z` that satisfy the condition `|z| < 2` after a certain number of iterations.
+The inverse plotting algorithm starts with a random complex number `z` and iteratively applies the function `g(z) = i * √(z - c)`, where `i` is either 1 or -1 (chosen randomly) and `c` is a constant complex number. The algorithm plots the points `z` that satisfy the condition `|z| < 2` after a certain number of iterations.
 
 ---
 
 ## About the Mandelbrot Set
 
-The Mandelbrot is a set of complex numbers defined by the equation z = z^2 + c, where z and c are complex numbers and z starts from 0. The escape algorithm is used to determine which points in the complex plane belong to the Mandelbrot set which do not. The escape algorithm tests whether the sequence of values of z generated by this equation stays bounded (i.e., the absolute value of z remains less than or equal to 2) or whether it escapes to infinity (i.e., the absolute value of z becomes greater than 2).
+The Mandelbrot is a set of complex numbers defined by the equation `z = z^2 + c`, where `z` and `c` are complex numbers and `z` starts from 0. The escape algorithm is used to determine which points in the complex plane belong to the Mandelbrot set which do not. The escape algorithm tests whether the sequence of values of `z` generated by this equation stays bounded (i.e., the absolute value of `z` remains less than or equal to 2) or whether it escapes to infinity (i.e., the absolute value of `z` becomes greater than 2).
 
 ### The Escape / Exterior Algorithm
 
-The variable z is initialized to the complex number c and then updated in each iteration of the loop using the equation z = z**2 + c. The absolute value of z is checked to see if it is greater than or equal to 2, which indicates that the sequence has escaped to infinity. If z has escaped to infinity, the variable diverge is set to True for the current pixel, and the iteration count for that pixel is recorded in the divIter array. The loop continues until the maximum number of iterations (self.maxIterates) is reached.
+The variable `z` is initialized to the complex number `c` and then updated in each iteration of the loop using the equation `z = z**2 + c`. The absolute value of `z` is checked to see if it is greater than or equal to 2, which indicates that the sequence has escaped to infinity. If `z` has escaped to infinity, the variable diverge is set to True for the current pixel, and the iteration count for that pixel is recorded in the `divIter` array. The loop continues until the maximum number of iterations is reached.
 
-After the loop, the divIter array is used to determine the color of each pixel in the Mandelbrot set. The color is determined based on the number of iterations it took for the sequence to escape to infinity. The more iterations it took, the deeper the color. For each pixel, the iteration count is retrieved from the divIter array and used to calculate the red, green, and blue components of the color. The pixel is then plotted with the calculated color.
+After the loop, the `divIter` array is used to determine the color of each pixel in the Mandelbrot set. The color is determined based on the number of iterations it took for the sequence to escape to infinity. The more iterations it took, the deeper the color. For each pixel, the iteration count is retrieved from the `divIter` array and used to calculate the red, green, and blue components of the color. The pixel is then plotted with the calculated color.
