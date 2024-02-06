@@ -6,3 +6,6 @@ https://github.com/rsm-13/nonlinear-dynamics/blob/main/Programs/logisticExplorer
 
 ## Newton's Method Fractal Explorer
 https://github.com/rsm-13/nonlinear-dynamics/blob/main/Programs/newtonsMethod/Newtons_README.md
+
+## Super Mandelbrot Set Explorer
+https://github.com/rsm-13/nonlinear-dynamics/blob/main/Programs/mandelbrotSet/SuperMandelbrotSetExplorer.md
